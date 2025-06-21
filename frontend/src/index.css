@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit;
+}
+
+.active hr{
+  @apply block
+}
+
+.animation{
+  @apply hover:translate-y-[-5px] transition-all duration-500
+}
+
+.btnEffect{
+  @apply hover:bg-black hover:text-white
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+@media (max-width:740px){
+  .active p{
+    @apply text-white bg-primary
+  }
+}
