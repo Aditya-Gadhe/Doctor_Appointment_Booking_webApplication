@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const [showMenu , setShowMenu] = useState(false);
     const goToProjectDoctorPanel = () => {
-        window.open("http://localhost:5174/login", "_blank"); // or "_self" for same tab
+        window.open(`${process.env.VITE_ADMIN_URL}`, "_blank"); // or "_self" for same tab
     };
 
   return (
